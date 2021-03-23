@@ -1,0 +1,129 @@
+/*全体的に少し上に移動*/
+#primary {
+    padding-top: 1px!important;
+}
+#secondary {
+    padding-top: 1px!important;
+}
+#top-row {
+    padding-top: 7px!important;
+}
+#info-contents > ytd-video-primary-info-renderer {
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------動画タイトル関連---------------------------------------------------------------------------------------------*/
+h1 yt-formatted-string.style-scope.ytd-video-primary-info-renderer {
+    /*タイトルの文字デザイン*/
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Yu Gothic;
+}
+
+#container > yt-formatted-string > a {
+    /*タイトル上のタグのデザイン*/
+    padding-bottom: 5px !important;
+    font-size: 14px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------動画情報関連---------------------------------------------------------------------------------------------*/
+.view-count {
+    /*再生回数だけのデザイン*/
+    font-size: 16px;
+}
+
+/*投稿日だけのフォント*/
+#date > yt-formatted-string {
+    font-size: 16px
+}
+
+#info-text {
+    /*再生回数と公開日時全体のデザイン*/
+    border-bottom: dotted 2px #c38743;
+    border-left: 10px solid #c38743;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    padding-right: 20px;
+    padding-left: 8px;
+}
+
+.d-time {
+    /*投稿時間のみのデザイン*/
+    font-size: 16px !important;
+}
+
+span.d-time:nth-last-of-type(n+2) {
+    display: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------評価関連--------------------------------------------------------------------------------------------*/
+#like-bar {
+    /*好評価バーのデザイン(低評価バー色を上書き)*/
+    background: #1267e7 !important;
+}
+
+#container.ytd-sentiment-bar-renderer {
+    /*低評価バーのデザイン*/
+    background: #9b041d !important;
+}
+
+#menu-container.ytd-video-primary-info-renderer {
+    /*評価等の高さ(シアターモードのときに最適化)*/
+    top: -14px;
+}
+#menu.ytd-video-primary-info-renderer {
+    /*評価アイコンとバーとの間を調整*/
+    top: 8px;
+}
+
+:nth-child(1) > .yt-simple-endpoint > yt-icon-button.style-scope > button.style-scope > .ytd-toggle-button-renderer {
+    /*高評価マーク色*/
+}
+:nth-child(2) > .yt-simple-endpoint > yt-icon-button.style-scope > button.style-scope > .ytd-toggle-button-renderer {
+    /*低評価マーク色*/
+}
+
+#sentiment {
+    /*評価バー全体の大きさ*/
+    width: 300px !important;
+    height: 5px;
+}
+#container.ytd-sentiment-bar-renderer {
+    /*評価バー全体の太さ*/
+    height: 3.4px;
+}
+#like-bar.ytd-sentiment-bar-renderer {
+    /*高評価バーの太さ(全体バーを上書き)*/
+    height: 3.4px;
+}
+div.ytd-menu-renderer > :nth-child(1) > .yt-simple-endpoint > yt-formatted-string.style-scope {
+    /*高評価テキスト色(低評価色を上書き)*/
+}
+
+ytd-toggle-button-renderer.style-text[is-icon-button] #text.ytd-toggle-button-renderer {
+    /*低評価テキスト色*/
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*アドオンによる追加UIのいち調整*/
+#enhancer-for-youtube-toolbar-wrapper {
+    margin-left: -330px !important;
+    border-right: solid 0.5;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*チャット欄幅パディング0*/
+div#secondary {
+    padding-right: 0px !important;
+}
+
+/*次の動画、を少し下げる*/
+#secondary {
+    padding-top: 10px!important;
+}
+
+/*キーボードショートカット非表示*/
+#movie_player > div.ytp-chrome-bottom > div.ytp-chrome-controls > div.ytp-right-controls > button.ytp-button.efy-ytp-keyboard-shortcuts {
+    display: none;
+}
